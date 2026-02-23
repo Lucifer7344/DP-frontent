@@ -33,7 +33,7 @@ function CourseCard({ course, index, inView }) {
         <p style={{ fontSize: "0.87rem", color: "#64748B", lineHeight: 1.7, marginBottom: "1.2rem" }}>{course.desc}</p>
 
         <div style={{ display: "flex", gap: ".5rem", flexWrap: "wrap", marginBottom: "1.4rem" }}>
-          {course.outcomes.map(o => <span key={o} style={{ padding: ".25rem .6rem", borderRadius: 6, background: "#F8FAFC", border: "1px solid #E2E8F0", fontSize: "0.72rem", fontWeight: 500, color: "#475569" }}>{o}</span>)}
+          {course.outcomes?.map(o => <span key={o} style={{ padding: ".25rem .6rem", borderRadius: 6, background: "#F8FAFC", border: "1px solid #E2E8F0", fontSize: "0.72rem", fontWeight: 500, color: "#475569" }}>{o}</span>)}
         </div>
 
         <div style={{ display: "flex", gap: "1rem", padding: "1rem 0 1.2rem", borderTop: "1px solid #F1F5F9", fontSize: "0.78rem", color: "#94A3B8" }}>
